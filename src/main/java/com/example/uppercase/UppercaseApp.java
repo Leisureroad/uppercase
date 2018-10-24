@@ -10,7 +10,7 @@ public class UppercaseApp {
 
 	@Bean
 	Function<String, String> uppercase() {
-		return String::toUpperCase;
+		return f -> "Hello " + f;
 	}
 
 	public static void main(String[] args) {
